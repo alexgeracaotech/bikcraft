@@ -15,8 +15,8 @@ html, body {
 }
 
 header {
-  height: 4.6875rem;
-  padding: 0 12.5rem;
+  height: 5.625rem;
+  padding: 0 10rem;
   background-color: #000;
   display: flex;
   justify-content: space-between;
@@ -35,6 +35,69 @@ header {
       a {
         padding: .5rem;
         font-size: 1.25rem;
+      }
+    }
+  }
+}
+
+main {
+  
+  .chamada {
+    height: 37.5rem;
+    padding: 0 10rem;
+    background-color: #000;
+    display: flex;
+    gap: 60px;
+
+    .texto-chamada {
+      position: relative;
+      width: 50%;
+      height: 650px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h1 {
+        font-size: 64px;
+        margin: 0 0 32px;
+
+        span {
+          color: #FFBF00;
+        }
+      }
+
+      p {
+        font-size: 24px;
+        line-height: 1.5;
+        color: #b2b2b2;
+        margin: 0 0 20px;
+      }
+
+      button {
+        width: fit-content;
+        padding: 16px 32px;
+        border-radius: 5px;
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        background: linear-gradient(#ffbf00, #f2a50c);
+        color: #000;
+        cursor: pointer;
+        transition: .25s;
+
+        &:hover {
+          background: linear-gradient(#d9a302, #d58e00);
+        }
+      }
+    }
+    
+    .imagem-chamada {
+      width: 50%;
+      height: fit-content;
+      position: relative;
+
+      img {
+        width: 100%;
       }
     }
   }
